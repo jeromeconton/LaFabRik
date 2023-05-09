@@ -1,0 +1,21 @@
+{
+  "name": "la_fabrik",
+  "description": "- Créer un fichier .gitignore\r  - Faire npm init et installer les modules nécessaires\r  - Faire le point d'entrée de l'application\r  - Faire les fichiers .env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "npx modemon index.js"
+  },
+  "author": "CJ 2023",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {}
+}
