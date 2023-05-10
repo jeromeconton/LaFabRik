@@ -1,7 +1,57 @@
 const appController = {
-  homePage(request, response) {
-      response.render('index');
+  // lien landing page
+  landingPage(req, res) {
+    res.render('index');
+  },
+
+  // liens du header
+  accueilPage(req, res) {
+    res.render('header/accueil');
+  },
+  boulangeriePage(req, res) {
+    res.render('header/boulangerie');
+  },
+  viennoiseriePage(req, res) {
+    res.render('header/viennoiserie');
+  },
+  patisseriePage(req, res) {
+    res.render('header/patisserie');
+  },
+  snackingSucrePage(req, res) {
+    res.render('header/snackingSucre');
+  },
+  snackingSalePage(req, res) {
+    res.render('header/snackingSale');
+  },
+  formulesPage(req, res) {
+    res.render('header/formules');
+  },
+
+  // liens du footer
+  informationsPage(req, res) {
+    res.render('footer/informations');
+  },
+  contactPage(req, res) {
+    res.render('footer/contact');
+  },
+  commentairesPage(req, res) {
+    res.render('footer/commentaires');
+  },
+  publicationsPage(req, res) {
+    res.render('footer/publications');
+  },
+  recrutementPage(req, res) {
+    res.render('footer/recrutement');
+  },
+  cgvPage(req, res) {
+    res.render('footer/cgv');
+  },
+  mentionsLegalesPage(req, res) {
+    res.render('footer/mentionslegales');
+  },
+  pdcPage(req, res) {
+    res.render('footer/pdc');
   }
-}
+};
 
 module.exports = appController;

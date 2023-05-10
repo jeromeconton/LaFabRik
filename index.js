@@ -4,9 +4,9 @@ const session = require('express-session');
 const app = express();
 const router = require('./app/router');
 
-const PORT = process.env.PORT || 1234
+const PORT = process.env.PORT || 1234;
 
-const errorHandlers = require('./app//middlewares/handlers/errorHandlers');
+const errorHandlers = require('./app/middlewares/handlers/errorHandlers');
 
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
@@ -28,16 +28,16 @@ app.use(session({
 app.use((request, response, next) => {
   // transmet les infos de session aux vues
   app.locals.session = request.session;
-
   next();
 });
 
 app.use(router);
 
+
 // gestion d'erreurs
 app.use(errorHandlers.notFound);
 app.use(errorHandlers.errorCollector);
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
     console.log(`Listening on ${process.env.BASE_URL}:${PORT}`)
 });
