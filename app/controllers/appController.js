@@ -1,10 +1,11 @@
+
 const appController = {
-  // lien landing page
+  // Landing page
   landingPage(req, res) {
     res.render('index');
   },
 
-  // liens du header
+  // Header Links
   accueilPage(req, res) {
     res.render('header/accueil');
   },
@@ -27,7 +28,7 @@ const appController = {
     res.render('header/formules');
   },
 
-  // liens du footer
+  // Footer Links
   informationsPage(req, res) {
     res.render('footer/informations');
   },

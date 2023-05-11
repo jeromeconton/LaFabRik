@@ -4,8 +4,6 @@
 
 ### mise en place 
 
- - Créer un fichier .gitignore
- - Faire npm init et installer les modules nécessaires
- - Faire le point d'entrée de l'application
- - Faire les fichiers .env
-  
+ - Faire `npm install` et installer les modules nécessaires
+ - Faire le fichier `.env`
+ - Lancer l'application avec `npm start`
