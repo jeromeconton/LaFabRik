@@ -1,0 +1,33 @@
+<%- include ('./partials/head') %>
+
+<header class="header">
+
+    <div class="header_container1">
+        <div class="header_address">
+            <p class="header_adress_p">
+               boulangerie <br> la fab'Rik & co <br> 2 rue de la belle étoile <br> 77230 longperrier
+            </p>
+        </div>
+        <div class="header_logo">
+            <a href="/">
+                <img src="img/logo_la_fab_rik_resize_x6.png"  alt="logo" class="header_logo_img">
+            </a>
+        </div>
+        <div class="header_open">
+            <p class="header_open_p">
+                horaires <br> <br> lundi 7h - 20h  <br> mardi    7h - 20h <br> mercredi 7h - 20h <br> jeudi    7h - 20h
+                <br> vendredi  7h - 20h <br> samedi    7h - 20h <br> dimanche  fermé
+            </p>
+        </div>
+    </div>    
+
+</header>
+
+<main>
+
+<p class="emailNotSend_p"> <%= "Une erreur s'est produite lors de l'envoi du message"%> <%= "Veuillez réessayer."%> 
+    
+    <a class="emailNotSend_p_clic" href="/contact"><br> cliquer sur l'image pour retouner au formulaire de contact
+        <img class="emailNotSend" src="img/emailNotSend.png"  alt="email not send">
+    </a>
+</p>

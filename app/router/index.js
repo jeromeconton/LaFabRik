@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const appController = require('../controllers/appController');
+const emailController = require('../controllers/emailController');
 
 // route Landing page
 router.get('/', appController.landingPage);
@@ -23,5 +24,8 @@ router.get('/recrutement', appController.recrutementPage);
 router.get('/cgv', appController.cgvPage);
 router.get('/mentionslegales', appController.mentionsLegalesPage);
 router.get('/pdc', appController.pdcPage);
+
+// Route POST pour l'envoi d'e-mail depuis le formulaire de contact
+router.post('/send-email', emailController.sendEmail);
 
 module.exports = router;
