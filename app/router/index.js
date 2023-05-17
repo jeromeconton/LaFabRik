@@ -13,7 +13,7 @@ router.get('/viennoiserie', appController.viennoiseriePage);
 router.get('/patisserie', appController.patisseriePage);
 router.get('/snackingSucre', appController.snackingSucrePage);
 router.get('/snackingSale', appController.snackingSalePage);
-router.get('/formules', appController.formulesPage);
+router.get('/formule', appController.formulesPage);
 
 // routes du Footer
 router.get('/informations', appController.informationsPage);

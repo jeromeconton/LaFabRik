@@ -25,7 +25,7 @@ const appController = {
     res.render('header/snackingSale');
   },
   formulesPage(req, res) {
-    res.render('header/formules');
+    res.render('header/formule');
   },
 
   // Footer Links
