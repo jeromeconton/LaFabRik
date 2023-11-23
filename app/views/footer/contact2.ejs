@@ -2,8 +2,23 @@
 
 <p class=" lienFooter_p2 lienFooter_p_end error">Veuillez remplir tous les champs du formulaire.</p>
 
-<h3>Formulaire de contact</h3>
-<form name="myForm" action="/send-email" onsubmit="return validateForm()" method="post">
+<h1 class="h1_footer">contactez-nous</h1>
+
+<div class="contact_container">
+
+   <div class="contact_container_left">
+      <h2 class="h2_footer">réseaux sociaux</h2>
+      <a href="https://www.facebook.com/337465093021852/posts/4856412964460353/" target="_blank">
+         <img class="contact_reseaux_img" src="img/footer/contact/facebook_logo.png" alt="photo facebook_logo">
+      </a>
+      <a href="https://twitter.com/search?q=boulangerie%20longperrier&src=typed_query&f=top" target="_blank">
+         <img class="contact_reseaux_img" src="img/footer/contact/instagram_logo.png" alt="photo instagram_logo" >
+      </a>
+   </div>
+
+   <div class="contact_container_right">
+      <h2 class="contact_title">Formulaire de contact</h2>
+      <form name="myForm" action="/send-email" onsubmit="return validateForm()" method="post">
          <table class="form-style">
             <tr>
                <td>
@@ -47,5 +62,9 @@
             </tr>
          </table>
       </form>
+   </div>
+
+</div>
+
 
 <%- include('../partials/footer') %>

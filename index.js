@@ -33,6 +33,7 @@ app.use((request, response, next) => {
 
 app.use(router);
 
+app.use('/js', express.static(__dirname + '/app/js'));
 
 // gestion d'erreurs
 app.use(errorHandlers.notFound);
