@@ -4,8 +4,6 @@ const session = require('express-session');
 const app = express();
 const router = require('./app/router');
 
-
-
 const PORT = process.env.PORT || 1234;
 
 const errorHandlers = require('./app/middlewares/handlers/errorHandlers');
@@ -16,8 +14,6 @@ app.set('views', './app/views');
 app.use(express.static('./assets'));
 // avoir accès a req.body
 app.use(express.urlencoded({ extended: true }));
-
-
 
 app.use(session({
     saveUninitialized: true,

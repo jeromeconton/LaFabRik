@@ -22,7 +22,7 @@ router.get('/commentaires', appController.commentairesPage);
 router.get('/publications', appController.publicationsPage);
 router.get('/recrutement', appController.recrutementPage);
 router.get('/cgv', appController.cgvPage);
-router.get('/mentionslegales', appController.mentionsLegalesPage);
+router.get('/mentionslegales', appController.mentionslegalesPage);
 router.get('/pdc', appController.pdcPage);
 
 // Route POST pour l'envoi d'e-mail depuis le formulaire de contact
