@@ -1075,10 +1075,10 @@ textarea{
   -moz-box-sizing: border-box;
   border:0.2vw solid #D0B084;
   padding: 0.1vw;
-  -webkit-transition: all 0.30s ease-in-out;
+  /* -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out; */
   outline: none;  
 }
 .form-style .long{

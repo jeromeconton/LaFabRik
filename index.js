@@ -4,6 +4,8 @@ const session = require('express-session');
 const app = express();
 const router = require('./app/router');
 
+
+
 const PORT = process.env.PORT || 1234;
 
 const errorHandlers = require('./app/middlewares/handlers/errorHandlers');
@@ -15,10 +17,7 @@ app.use(express.static('./assets'));
 // avoir accès a req.body
 app.use(express.urlencoded({ extended: true }));
 
-// mise en place favicon
-const favicon = require('serve-favicon');
-const path = require('path');
-app.use (favicon(path.join(__dirname + '/favicon.ico')))
+
 
 app.use(session({
     saveUninitialized: true,
@@ -40,8 +39,11 @@ app.use(router);
 
 app.use('/js', express.static(__dirname + '/app/js'));
 
-;
- 
+// mise en place favicon
+const favicon = require('serve-favicon');
+const path = require('path');
+app.use (favicon(path.join(__dirname + '/favicon.ico')));
+
 // gestion d'erreurs
 app.use(errorHandlers.notFound);
 app.use(errorHandlers.errorCollector);
