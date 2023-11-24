@@ -15,6 +15,11 @@ app.use(express.static('./assets'));
 // avoir accès a req.body
 app.use(express.urlencoded({ extended: true }));
 
+// mise en place favicon
+const favicon = require('serve-favicon');
+const path = require('path');
+app.use (favicon(path.join(__dirname + '/favicon.ico')))
+
 app.use(session({
     saveUninitialized: true,
     resave: true,
@@ -35,6 +40,8 @@ app.use(router);
 
 app.use('/js', express.static(__dirname + '/app/js'));
 
+;
+ 
 // gestion d'erreurs
 app.use(errorHandlers.notFound);
 app.use(errorHandlers.errorCollector);
