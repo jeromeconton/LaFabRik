@@ -48,7 +48,7 @@ const appController = {
     res.render('footer/cgv');
   },
   mentionslegalesPage(req, res) {
-    res.render('footer/cgv');
+    res.render('footer/mentionslegales');
   },
   pdcPage(req, res) {
     res.render('footer/pdc');
