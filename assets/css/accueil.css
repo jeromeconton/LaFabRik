@@ -18,8 +18,6 @@
 .accueil_container1 {
   display: flex;
   margin-bottom: 3vw;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .accueil_container1_left {
@@ -39,7 +37,7 @@ h2 {
   justify-content: center;
   color: #FAF2DE;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container1_nav :hover {
@@ -66,13 +64,13 @@ h2 {
   flex-direction: column;
   padding: 5.5vw 10vw 3vw 5vw;
   max-width: 35vw;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container1_picture {
   display: flex;
   justify-content: space-around;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container1_img {
@@ -82,7 +80,7 @@ h2 {
   height: 10vw;
   padding: 0 1vw;
   border-radius: 2rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container1_img :hover {
@@ -92,8 +90,6 @@ h2 {
 .accueil_container2 {
   display: flex;
   margin-bottom: 3vw;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .accueil_container2_left {
@@ -108,7 +104,7 @@ h2 {
   flex-direction: column;
   padding: 3vw 10vw 3vw 10vw;
   max-width: 35vw;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container2_nav {
@@ -116,7 +112,7 @@ h2 {
   justify-content: center;
   color: #FAF2DE;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container2_nav :hover {
@@ -141,7 +137,7 @@ h2 {
 .accueil_container2_picture {
   display: flex;
   justify-content: space-around;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container2_img {
@@ -151,7 +147,7 @@ h2 {
   height: 10vw;
   padding: 0 1vw;
   border-radius: 2rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accueil_container2_img :hover {
