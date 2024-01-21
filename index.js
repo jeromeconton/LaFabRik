@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
+const compression = require('compression');
 const app = express();
 const router = require('./app/router');
 
@@ -10,6 +11,9 @@ const errorHandlers = require('./app/middlewares/handlers/errorHandlers');
 
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
+
+// Ajout du middleware de compression pour compresser les réponses
+app.use(compression());
 
 app.use(express.static('./assets'));
 // avoir accès a req.body
@@ -37,6 +41,7 @@ app.use('/js', express.static(__dirname + '/app/js'));
 
 // mise en place favicon
 const favicon = require('serve-favicon');
+
 const path = require('path');
 app.use (favicon(path.join(__dirname + '/favicon.ico')));
 

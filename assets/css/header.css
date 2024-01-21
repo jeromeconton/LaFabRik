@@ -1,0 +1,88 @@
+/* --------------- Mise en page du Header --------------- */
+
+header {
+  background-color: #D0B084;
+}
+
+.header_container1 {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100vh;
+  min-height: 1vh;
+  width: 100vw;
+  text-transform: capitalize;
+}
+
+.header_address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  border-radius: 25%;
+  background-color: #191919;
+  color: #FAF2DE;
+  font-size: 1vw;
+  text-align: center;
+  margin: 1.5vw 2vw;
+  line-height: 2;
+}
+
+.header_lien_tel{
+  text-decoration: none;
+  color: #FAF2DE;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  background-color: #191919;
+  margin: 3vw;
+}
+
+.header_logo_img {
+  width: 30vw;
+}
+
+.header_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  border-radius: 25%;
+  background-color: #191919;
+  color: #FAF2DE;
+  font-size: 1vw;
+  text-align: center;
+  margin: 1.5vw 2vw;
+}
+
+.header_container2 {
+  max-height: 100vh;
+  min-height: 0vw;
+  width: 100vw;
+  text-transform: capitalize;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  color: #FAF2DE;
+  font-size: 1vw;
+  text-align: center;
+  margin: 0 5vw 1vw 5vw;
+}
+
+.header_nav_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  color: #FAF2DE;
+  text-decoration: none;
+  width: 9vw;
+  height: 2.5vw;
+  margin-bottom: 1vw;
+  border-radius: 2rem;
+}
