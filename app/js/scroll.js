@@ -1,7 +1,7 @@
 
 window.addEventListener("scroll", function() {
   
-let container2 = document.querySelector(".container2_presentation");
+  let container2 = document.querySelector(".container2_presentation");
   if (container2) {
     let windowHeight = window.innerHeight;
     let container2Top = container2.offsetTop;

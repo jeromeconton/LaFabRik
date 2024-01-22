@@ -24,7 +24,7 @@ app.use(session({
     resave: true,
     secret: process.env.SESSION_SECRET,
     cookie: {
-        secure: false, // ON EST PAS EN HTTPS
+        secure: true, // ON EST EN HTTPS
         maxAge: 1000 * 60 * 60 * 24 // session d'une durée max de 24H
     }
 }));
