@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const compression = require('compression');
 const app = express();
+
 const router = require('./app/router');
 
 const PORT = process.env.PORT || 1234;
@@ -15,7 +16,12 @@ app.set('views', './app/views');
 // Ajout du middleware de compression pour compresser les réponses
 app.use(compression());
 
-app.use(express.static('./assets'));
+// Configuration pour servir des fichiers statiques avec en-têtes Expires
+const staticOptions = {
+    maxAge: 1000 * 60 * 60 * 24,  // Spécifie la durée de mise en cache 24h
+  };
+app.use(express.static(path.join(__dirname, 'assets'), staticOptions));
+
 // avoir accès a req.body
 app.use(express.urlencoded({ extended: true }));
 
