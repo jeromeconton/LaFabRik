@@ -48,8 +48,6 @@ app.use('/js', express.static(__dirname + '/app/js'));
 
 // mise en place favicon
 const favicon = require('serve-favicon');
-
-const path = require('path');
 app.use (favicon(path.join(__dirname + '/favicon.ico')));
 
 // gestion d'erreurs
