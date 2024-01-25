@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const compression = require('compression');
+const path = require('path');
 const app = express();
 
 const router = require('./app/router');
